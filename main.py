@@ -637,4 +637,4 @@ async def stop(self, *args):
          await super().stop()       
          print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
 
-NubBot.run()
+Bot.run()
