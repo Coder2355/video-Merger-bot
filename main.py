@@ -610,7 +610,7 @@ class Bot(Client):
               sleep_threshold=15,  
           ) 
   
- async def start(self): 
+async def start(self): 
          await super().start() 
          me = await self.get_me() 
          self.mention = me.mention 
@@ -633,7 +633,7 @@ class Bot(Client):
              except: 
                  print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ") 
   
- async def stop(self, *args): 
+async def stop(self, *args): 
          await super().stop()       
          print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
 
