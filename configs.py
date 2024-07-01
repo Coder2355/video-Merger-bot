@@ -4,23 +4,23 @@ import os
 
 
 class Config(object):
-    API_ID = os.environ.get("API_ID")
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    API_ID = os.environ.get("API_ID", "21740783")
+    API_HASH = os.environ.get("API_HASH", "a5dc7fec8302615f5b441ec5e238cd46")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merger_Bot")
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
-    LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "Anime_warrior_tamil")
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002040299414")
     DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
     TIME_GAP = int(os.environ.get("TIME_GAP", 5))
     MAX_VIDEOS = int(os.environ.get("MAX_VIDEOS", 5))
     STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME")
     STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
-    MONGODB_URI = os.environ.get("MONGODB_URI")
+    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://Speedwolf1:speedwolf24689@cluster0.rgfywsf.mongodb.net/")
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER",1849814176))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER", "6299192020"))
 
     START_TEXT = """
-𝐇𝐞𝐥𝐥𝐨! 𝐃𝐮𝐟𝐟𝐞𝐫, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐫 𝐁𝐨𝐭 𝐛𝐲 [@Dads_links](https://t.me/Dads_links)!
+𝐇𝐞𝐥𝐥𝐨! 𝐃𝐮𝐟𝐟𝐞𝐫, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐫 𝐁𝐨𝐭 𝐛𝐲 [@Anime_warrior_Tamil]!
 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐜𝐚𝐧 𝐌𝐞𝐫𝐠𝐞 𝐌𝐮𝐥𝐭𝐢𝐩𝐥𝐞 𝐕𝐢𝐝𝐞𝐨𝐬 𝐢𝐧 𝐎𝐧𝐞 𝐕𝐢𝐝𝐞𝐨 𝐀𝐧𝐃 𝐕𝐢𝐝𝐞𝐨 𝐅𝐨𝐫𝐦𝐚𝐭𝐬 𝐬𝐡𝐨𝐮𝐥𝐝 𝐛𝐞 𝐬𝐚𝐦𝐞. 
 
 𝐌𝐚𝐝𝐞 𝐛𝐲 @Dads_links
