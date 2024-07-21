@@ -44,4 +44,4 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-NubBot.run()
+Bot.run()
