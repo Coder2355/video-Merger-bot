@@ -12,7 +12,7 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            name="video-merger-bot",  
+            session_name="video-merger-bot",  # Corrected from 'name' to 'session_name'
             api_id=Config.API_ID,  
             api_hash=Config.API_HASH,  
             bot_token=Config.BOT_TOKEN,  
@@ -33,8 +33,10 @@ class Bot(Client):
             await web.TCPSite(app, "0.0.0.0", 8060).start()     
         print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️")
         for id in Config.ADMIN:
-            try: await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
-            except: pass
+            try: 
+                await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
+            except: 
+                pass
         if Config.LOG_CHANNEL:
             try:
                 curr = datetime.now(timezone("Asia/Kolkata"))
