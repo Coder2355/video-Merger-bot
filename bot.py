@@ -8,7 +8,7 @@ from aiohttp import web
 from route import web_server
 import pyromod 
 
-class Bot(Client):
+class Bot(NubBot):
 
     def __init__(self):
         super().__init__(
