@@ -6,7 +6,7 @@ from pyrogram.raw.all import layer
 from configs import Config
 from aiohttp import web
 from route import web_server
-import pyromod 
+import pyromod
 
 class Bot(Client):
 
@@ -44,4 +44,6 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-Bot.run()
+if __name__ == "__main__":
+    bot = Bot()
+    bot.run()
