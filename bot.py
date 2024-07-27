@@ -11,6 +11,7 @@ import shutil
 import psutil
 import random
 import asyncio
+import app
 from datetime import datetime  
 from pytz import timezone  
 from pyrogram import Client, __version__  
