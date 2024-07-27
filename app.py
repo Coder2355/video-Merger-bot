@@ -1,4 +1,4 @@
-import main
+import bot
 from datetime import datetime
 from pytz import timezone
 from pyrogram import Client, __version__
@@ -47,5 +47,4 @@ class Bot(Client):
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
 if __name__ == "__main__":
-    bot = Bot()
-    bot.run()
+    Bot().run()
