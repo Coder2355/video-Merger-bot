@@ -8,7 +8,7 @@ from aiohttp import web
 from route import web_server
 import pyromod
 
-class Bot(Client):
+class NubBot(Client):
 
     def __init__(self):
         super().__init__(
@@ -47,4 +47,4 @@ class Bot(Client):
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
 if __name__ == "__main__":
-    Bot().run()
+    NubBot.run.run()
